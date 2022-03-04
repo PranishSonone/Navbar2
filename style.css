@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    background-color:#1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+nav .logo{
+    font-size: 33px;
+    color: #fff;
+    font-weight: lighter;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0px 10px;
+}
+nav ul li{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+nav .ul a:hover,
+nav .ul a.active{
+color: #1b1b1b;
+    background-color: #fff;
+    cursor: pointer;
+}
+nav  .menu-btn i{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+#click{
+    display: none;
+}
+ul{
+    display: flex;
+} */
+ #click{
+    display: none;
+} 
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 940px) {
+   
+    nav .ul  {
+        font-size: 15px;
+        position: fixed;
+        /* top: -100%;
+        left: 0px;     ye parameter se upaR SE aayega  */
+         top: 80px;
+         left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+}
+    #click:checked ~ .ul{
+        /* top: 80px; upar se aane ke liyae  */
+        left: 0px;
+
+    }
+    nav ul li{
+        margin: 40px 0;
+        display: block;
+        
+      
+    }
+  
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav .ul a:hover,
+    nav .ul a.active{
+      color: aqua;
+    background: none;
+    cursor: pointer;
+    
+  }
+  nav  .menu-btn i{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: block;
+}
+ul li{
+    display: inline-block;
+}
+
+}
